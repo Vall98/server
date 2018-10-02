@@ -7,6 +7,10 @@
 
 CC	=	gradle
 
+MV	=	mv
+
+JARPATH	=	build/libs/server.jar
+
 RM	=	rm -f
 
 NAME	=	server.jar
@@ -15,6 +19,7 @@ all: $(NAME)
 
 $(NAME):
 	$(CC) build
+	$(MV) $(JARPATH) ./
 
 clean:
 	$(CC) clean
@@ -24,4 +29,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all fclean re
+.PHONY: all fclean clean re

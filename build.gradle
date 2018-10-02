@@ -2,4 +2,7 @@ apply plugin: 'java'
 
 jar {
     baseName = 'server'
+    manifest {
+        attributes 'Main-Class': 'hello.HelloWorld'
+    }
 }
