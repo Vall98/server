@@ -1,7 +1,5 @@
 apply plugin: 'java'
 
-mainClassName = 'hello.HelloWorld'
-
 jar {
     baseName = 'server'
 }

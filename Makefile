@@ -11,15 +11,13 @@ RM	=	rm -f
 
 NAME	=	server.jar
 
-SRCS	=	src/main.java
-
 all: $(NAME)
 
 $(NAME):
-	$(CC)
+	$(CC) build
 
 clean:
-	$(RM) build/
+	$(CC) clean
 
 fclean: clean
 	$(RM) $(NAME)
